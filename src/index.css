@@ -1,11 +1,103 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
 
-* {
-  box-sizing: border-box;
+body {
+  font-family: Verdana, Arial;
+  padding: 0 0 0 20px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.center {
+  text-align: center;
+}
+
+#extern {
+  width: 680px;
+  height: 400px;
+  margin: 0 auto;
+  background: #fefefe;
+  padding: 30px;
+  border: 5px solid #efefef;
+  position: relative;
+}
+
+#primary {
+  width: 680px;
+  height: 400px;
+}
+#bodyBtn {
+  height: 86px;
+  margin: 15px 0;
+}
+#bodyBtn button {
+  width: 246px;
+  padding: 27px 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 27px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  border-radius: 6px;
+}
+#bodyBtn #start_button {
+  background: #238dd3;
+  float: left;
+  margin: 0 0 0 70px;
+  color: #24e9cf;
+}
+#bodyBtn #reset_button {
+  background: #aaa;
+  float: right;
+  margin: 0 70px 0 0;
+  color: #5c5a5a;
+}
+
+#bodyBtn #pause_button {
+  background: #61db75;
+  float: left;
+  margin: 0 0 0 70px;
+  color: #116ce4;
+}
+
+#header img {
+  display: block;
+  object-fit: contain;
+  background-color: transparent;
+  margin: auto;
+}
+
+#box {
+  margin: 0 auto;
+  width: 534px;
+  height: 125px;
+  margin-bottom: 36px;
+  position: relative;
+  clear: both;
+}
+
+#timer {
+  margin: auto;
+  text-align: center;
+  letter-spacing: 0px;
+  line-height: 128px;
+  position: absolute;
+  width: 100%;
+}
+
+#timer span {
+  font-weight: bold;
+  font-family: Helvetica;
+  font-size: 114px;
+  color: #4babbc;
+  text-shadow: 1px 1px 1px #b1bea9;
+  transition: all 0 ease 0.5s;
 }
 
 html {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   line-height: 1.5;
 
   color: #ebe7ef;
@@ -19,104 +111,14 @@ html {
   min-height: 80rem;
 }
 
-main {
-  width: 90%;
-  max-width: 50rem;
-  margin: auto;
-}
-
-#core-concepts {
-  padding: 2rem;
+#status {
+  padding: 27px 0;
   border-radius: 6px;
-  background-color: #140524;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-main h2 {
-  text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
-  margin: 0 0 1.5rem 0;
-  color: #a18aba;
-}
-
-#core-concepts ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#core-concepts li {
-  width: 10rem;
+#status p {
   text-align: center;
 }
-
-#core-concepts li img {
-  height: 4rem;
-  width: 6rem;
-  object-fit: cover;
-}
-
-#core-concepts li h3 {
-  margin: 0.5rem 0;
-}
-
-#core-concepts li p {
-  font-size: 0.9rem;
-}
-
-#examples {
-  margin: 3rem auto;
-}
-
-#examples h2 {
-  text-align: left;
-}
-
-#examples menu {
-  margin: 1rem 0;
-  padding: 0;
-  display: flex;
-  gap: 0.5rem;
-  list-style: none;
-}
-
-#examples menu button {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 6px;
-  background-color: transparent;
-  color: #a18aba;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-#examples menu button:hover {
-  background-color: #1b082f;
-  color: #ebe7ef;
-}
-
-#examples menu button.active {
-  background-color: #7925d3;
-  color: #ebe7ef;
-}
-
-#tab-content {
-  padding: 1rem;
-  border-radius: 6px;
-  background-color: #2f1d43;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-#tab-content h3 {
-  margin: 0;
-}
-
-#tab-content code {
-  font-size: 1rem;
+#status span {
+  color: #20043d;
 }
